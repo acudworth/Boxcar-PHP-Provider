@@ -220,7 +220,7 @@ class boxcar_api {
 	 * @return array
 	 */
 	private function http_post ($task, $data) {
-		$url = self::ENDPOINT . $this->api_key . '/' . $task;
+		$url = self::ENDPOINT . $this->api_key . '/' . $task . '/';
 
 		$post_fields = array();
 		foreach ($data as $k=>$v) {
